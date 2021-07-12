@@ -17,13 +17,13 @@ export class TimelineHeaderThInner extends BaseComponent<TimelineHeaderThInnerPr
     return (
       <ContentHook hookProps={props.hookProps} content={context.options.slotLabelContent} defaultContent={renderInnerContent}>
         {(innerElRef, innerContent) => (
-          <a
+          <span
             ref={innerElRef}
             className={'fc-timeline-slot-cushion fc-scrollgrid-sync-inner' + (props.isSticky ? ' fc-sticky' : '')}
             {...navLinkAttrs}
           >
             {innerContent}
-          </a>
+          </span>
         )}
       </ContentHook>
     )
